@@ -3,14 +3,17 @@ window.addEventListener('load', () => {
   setaCorComABarra();
 });
 
-var rangeVermelho, rangeVerde, rangeAzul;
+var rangeVermelho = null;
+var rangeVerde = null;
+var rangeAzul = null;
 
-var campoVermelho, campoVerde, campoAzul;
+var campoVermelho = null;
+var campoVerde = null;
+var campoAzul = null;
 var quadradoDaCor;
 var r = '0';
 var g = '0';
 var b = '0';
-
 
 function iniciaCampos() {
   rangeVermelho = document.querySelector('#rangeVermelho');
@@ -19,7 +22,7 @@ function iniciaCampos() {
   campoVermelho = document.querySelector('#campoVermelho');
   campoVerde = document.querySelector('#campoVerde');
   campoAzul = document.querySelector('#campoAzul');
-  quadradoDaCor = document.querySelector('div');
+  quadradoDaCor = document.querySelector('#quadradoDaCor');
 }
 
 function setaCorComABarra() {
@@ -46,7 +49,7 @@ function mudancaNaBarra(event) {
 }
 
 function alteraCor() {
-  quadradoDaCor.style.backgroudColor = `rgb(${r},${g},${b})`;
+  quadradoDaCor.style = `background-color: rgb(${r},${g},${b})`;
   campoVermelho.value = r;
   campoVerde.value = g;
   campoAzul.value = b;
