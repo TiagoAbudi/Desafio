@@ -1,0 +1,57 @@
+body {
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.quadro {
+  border: 2px solid black;
+  padding: 15px;
+  margin: 50px;
+  max-width: min-content;
+  border-radius: 15px;
+}
+
+.alinhamento {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nomeCores {
+  min-width: 165px;
+}
+
+.ranges {
+  min-width: 180px;
+}
+
+.inputs {
+  border-radius: 15px;
+  max-width: 35px;
+  margin-left: 15px;
+  width: max-content;
+  text-align: center;
+}
+
+.cor {
+  width: 100px;
+  height: 100px;
+  margin-left: 150px;
+  border: 1px solid lightgray;
+  margin-top: 20px;
+}
+
+#corVermelho {
+  color: red;
+}
+
+#corVerde {
+  color: green;
+}
+
+#corAzul {
+  color: blue;
+}

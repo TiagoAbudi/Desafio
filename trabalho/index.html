@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Trabalho</title>
+  </head>
+  <body>
+    <div class="quadro">
+      <h1>Paleta de cores</h1>
+      <div class="alinhamento">
+        <span class="nomeCores" id="corVermelho"> (R) Vermelho: </span>
+        <input
+          class="ranges"
+          value="0"
+          type="range"
+          id="rangeVermelho"
+          min="0"
+          max="255"
+        />
+        <input
+          class="inputs"
+          value="0"
+          type="text"
+          id="campoVermelho"
+          disabled
+        />
+      </div>
+
+      <div class="alinhamento">
+        <span class="nomeCores" id="corVerde"> (G) Verde: </span>
+        <input
+          class="ranges"
+          value="0"
+          type="range"
+          id="rangeVerde"
+          min="0"
+          max="255"
+        />
+        <input class="inputs" value="0" type="text" id="campoVerde" disabled />
+      </div>
+
+      <div class="alinhamento">
+        <span class="nomeCores" id="corAzul"> (B) Azul: </span>
+        <input
+          class="ranges"
+          value="0"
+          type="range"
+          id="rangeAzul"
+          min="0"
+          max="255"
+        />
+        <input class="inputs" value="0" type="text" id="campoAzul" disabled />
+      </div>
+      <div id="quadradoDaCor" class="cor"></div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
