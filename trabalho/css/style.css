@@ -5,6 +5,12 @@ body {
   padding: 20px;
 }
 
+h1{
+margin-left: 27px;
+margin-right: 27px;
+border-bottom: 1px solid black;
+}
+
 .quadro {
   border: 2px solid black;
   padding: 15px;
@@ -42,16 +48,6 @@ body {
   margin-left: 150px;
   border: 1px solid lightgray;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-#corVermelho {
-  color: red;
-}
-
-#corVerde {
-  color: green;
-}
-
-#corAzul {
-  color: blue;
-}

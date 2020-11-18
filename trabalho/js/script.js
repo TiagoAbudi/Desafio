@@ -10,7 +10,13 @@ var rangeAzul = null;
 var campoVermelho = null;
 var campoVerde = null;
 var campoAzul = null;
+
+var corVermelho = null;
+var corVerde = null;
+var corAzul = null;
+
 var quadradoDaCor;
+
 var r = '0';
 var g = '0';
 var b = '0';
@@ -22,6 +28,9 @@ function iniciaCampos() {
   campoVermelho = document.querySelector('#campoVermelho');
   campoVerde = document.querySelector('#campoVerde');
   campoAzul = document.querySelector('#campoAzul');
+  corVermelho = document.querySelector('#corVermelho');
+  corVerde = document.querySelector('#corVerde');
+  corAzul = document.querySelector('#corAzul');
   quadradoDaCor = document.querySelector('#quadradoDaCor');
 }
 
@@ -49,7 +58,10 @@ function mudancaNaBarra(event) {
 }
 
 function alteraCor() {
-  quadradoDaCor.style = `background-color: rgb(${r},${g},${b})`;
+  quadradoDaCor.style.backgroundColor = `rgb(${r},${g},${b})`;
+  corVermelho.style.color = `rgb(${r}, 0, 0)`;
+  corVerde.style.color = `rgb(0, ${g}, 0)`;
+  corAzul.style.color = `rgb(0, 0, ${b})`;
   campoVermelho.value = r;
   campoVerde.value = g;
   campoAzul.value = b;
