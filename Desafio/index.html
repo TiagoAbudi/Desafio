@@ -14,22 +14,41 @@
     <div class="container">
       <h1 class="tittle">Pesquisa de usuários</h1>
 
-      <div class="flex-row">
-        <div class="input-field input">
-          <input id="inputSearch" type="text" class="validate" />
-          <label for="inputSearch">Busca</label>
+      <div id="divSpinner" class="flex-row flex-center">
+        <div class="preloader-wrapper big active">
+          <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+              <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
         </div>
-        <button id="buttonSearch" class="waves-effect waves-light btn">
-          Buscar
-        </button>
+        <span style="margin-left: 10px; font-size: 1.5rem">Aguarde...</span>
       </div>
 
-      <div class="flex-row flex-align-top">
-        <div id="panelUsers" class="panel">
-          <h2>Nenhum usuário filtrado</h2>
+      <div id="divInteraction" class="hidden">
+        <div class="flex-row">
+          <div class="input-field input">
+            <input id="inputSearch" type="text" class="validate" />
+            <label for="inputSearch">Busca</label>
+          </div>
+          <button id="buttonSearch" class="waves-effect waves-light btn">
+            Buscar
+          </button>
         </div>
-        <div id="panelStatistics" class="panel">
-          <h2>Estatísticas</h2>
+
+        <div class="flex-row flex-align-top">
+          <div id="panelUsers" class="panel">
+            <h2>Nenhum usuário filtrado</h2>
+          </div>
+          <div id="panelStatistics" class="panel">
+            <h2>Estatísticas</h2>
+          </div>
         </div>
       </div>
     </div>

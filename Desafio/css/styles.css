@@ -14,6 +14,10 @@
   align-items: flex-start;
 }
 
+.flex-center{
+  justify-content: center;
+}
+
 .input {
   display: flex;
   width: 100%;
@@ -41,4 +45,8 @@ h2 {
 
 .space-bottom{
   margin-bottom: 10px;
+}
+
+.hidden{
+  display: none;
 }
