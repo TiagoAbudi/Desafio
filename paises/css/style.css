@@ -59,3 +59,7 @@ a{
   margin-right: 10px;
   min-width: 450px;
 }
+
+button{
+  color: red;
+}

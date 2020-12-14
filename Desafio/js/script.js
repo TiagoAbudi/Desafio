@@ -49,7 +49,7 @@ async function fetchUsers() {
 }
 
 function showInteraction() {
-  setTimeout(() =>{
+  setTimeout(() => {
     divSpinner.classList.add("hidden");
     divInteraction.classList.remove("hidden");
   }, 1000);
@@ -57,6 +57,7 @@ function showInteraction() {
 
 function addEvents() {
   inputSearch.addEventListener("keyup", handleKeyUP);
+  buttonSearch.addEventListener("click", handleClick);
 }
 
 function handleKeyUP(event) {
@@ -65,6 +66,13 @@ function handleKeyUP(event) {
     return;
   }
   const filterText = event.target.value;
+  if (filterText.trim() !== "") {
+    filterUsers(filterText);
+  }
+}
+
+function handleClick() {
+  const filterText = inputSearch.value;
   if (filterText.trim() !== "") {
     filterUsers(filterText);
   }

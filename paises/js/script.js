@@ -58,7 +58,7 @@ function renderCountryList() {
     const countryHTML = `
       <div class='country'>
         <div>
-          <a id="${id}" class="btn">+</a>
+          <a id="${id}" class="waves-effect waves-light btn">+</a>
         </div>
         <div>
           <img src="${flag}" alt="${name}">
@@ -92,7 +92,7 @@ function renderFavorites() {
     const favoriteCountryHTML = `
     <div class='country'>
       <div>
-        <a id="${id}" class="btn">-</a>
+        <a id="${id}" class="waves-effect waves-light btn" style="background-color: red;">-</a>
       </div>
       <div>
         <img src="${flag}" alt="${name}">
